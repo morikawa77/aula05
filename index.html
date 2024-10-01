@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+      // theme: {
+      //   screens: {
+      //     sm: '480px',
+      //     md: '768px',
+      //     lg: '976px',
+      //     xl: '1440px',
+      //   },
+      //   colors: {
+      //     'blue': '#1fb6ff',
+      //     'purple': '#7e5bef',
+      //     'pink': '#ff49db',
+      //     'orange': '#ff7849',
+      //     'green': '#13ce66',
+      //     'yellow': '#ffc82c',
+      //     'gray-dark': '#273444',
+      //     'gray': '#8492a6',
+      //     'gray-light': '#d3dce6',
+      //   },
+      //   fontFamily: {
+      //     sans: ['Graphik', 'sans-serif'],
+      //     serif: ['Merriweather', 'serif'],
+      //   },
+      //   extend: {
+      //     spacing: {
+      //       '128': '32rem',
+      //       '144': '36rem',
+      //     },
+      //     borderRadius: {
+      //       '4xl': '2rem',
+      //     }
+      //   }
+      // }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+  <h1 class="text-3xl font-bold underline text-clifford">
+    Hello world 2!
+  </h1>
+  <div class="lg:content-auto">
+    <!-- ... -->
+  </div>
+  <div class="prose">
+    <!-- ... -->
+  </div>
+</body>
+
+</html>
